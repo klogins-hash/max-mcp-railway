@@ -2,9 +2,9 @@
   "name": "max-mcp-railway",
   "version": "2.0.0",
   "description": "Enhanced Railway integration with Max MCP server - Production Ready",
-  "main": "index-enhanced.js",
+  "main": "index-optimized.js",
   "scripts": {
-    "start": "node index-enhanced.js",
+    "start": "node index-optimized.js",
     "start:optimized": "node index-optimized.js",
     "start:original": "node index.js",
     "dev": "nodemon index-enhanced.js",
