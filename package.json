@@ -1,0 +1,42 @@
+{
+  "name": "max-mcp-railway",
+  "version": "2.0.0",
+  "description": "Enhanced Railway integration with Max MCP server - Production Ready",
+  "main": "index-enhanced.js",
+  "scripts": {
+    "start": "node index-enhanced.js",
+    "start:optimized": "node index-optimized.js",
+    "start:original": "node index.js",
+    "dev": "nodemon index-enhanced.js",
+    "test": "node test-optimizations.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cohere-ai": "^7.10.0",
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "openai": "^4.28.0",
+    "weaviate-ts-client": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "railway",
+    "mcp",
+    "api",
+    "integration"
+  ],
+  "author": "",
+  "license": "MIT"
+}
