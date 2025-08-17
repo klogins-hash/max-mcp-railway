@@ -55,7 +55,7 @@ This project provides a unified API gateway that connects:
 
 ```env
 # MCP Configuration
-MCP_ENDPOINT=https://mcp-max-v1-production.up.railway.app/
+MCP_ENDPOINT=https://mcp-max-v1-production.up.railway.app/api/v1
 MCP_API_KEY=your_mcp_api_key
 
 # Weaviate Configuration
