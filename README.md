@@ -1,8 +1,26 @@
-# Max MCP Railway Integration
+# Max MCP Railway v2.0.0
 
-A Railway application that integrates with Max MCP server and Weaviate vector database.
+🚀 **Production-ready** integration gateway connecting Max MCP server, Weaviate vector database, and Railway infrastructure with enterprise-grade optimizations.
 
-## Overview
+### 🎯 Production Optimizations (v2.0.0)
+
+### Performance Enhancements
+- **Request Deduplication**: Prevents duplicate concurrent API calls
+- **Circuit Breakers**: Protects all external services from cascading failures
+- **Embedding Queue**: Batches up to 96 embeddings for optimal Cohere API usage
+- **Adaptive Cache Manager**: Dynamically adjusts TTL based on access patterns
+- **Weaviate Connection Pool**: 5 persistent connections for better performance
+- **Brotli Compression**: Enhanced response compression
+- **Metrics Aggregator**: Time-series data collection and analysis
+- **Streaming Exports**: NDJSON streaming for large datasets
+
+### Core Features
+- **MCP Integration**: Direct connection to Max MCP server for AI-powered operations
+- **Weaviate Vector Database**: Efficient storage and retrieval of embeddings
+- **RESTful API**: Clean, well-documented endpoints for all operations
+- **Railway Deployment**: Optimized for Railway platform with health checks and monitoring
+
+**GitHub Repository**: https://github.com/klogins-hash/max-mcp-railway
 
 This project provides a unified API gateway that connects:
 - **Max MCP Server**: https://mcp-max-v1-production.up.railway.app/
@@ -52,6 +70,36 @@ RAILWAY_PROJECT_ID=your_project_id
 PORT=3000
 NODE_ENV=production
 ```
+
+## 🚀 Railway Deployment
+
+### Quick Deploy
+
+1. **Connect GitHub to Railway**:
+   - Go to [Railway Dashboard](https://railway.app)
+   - Create a new project
+   - Select "Deploy from GitHub repo"
+   - Choose `klogins-hash/max-mcp-railway`
+
+2. **Configure Environment Variables**:
+   Add these variables in Railway:
+   ```
+   MCP_ENDPOINT=https://mcp-max-v1-production.up.railway.app/api/v1
+   MCP_API_KEY=your_mcp_api_key
+   WEAVIATE_ENDPOINT=your_weaviate_endpoint
+   WEAVIATE_API_KEY=your_weaviate_api_key
+   COHERE_API_KEY=your_cohere_api_key
+   OPENROUTER_API_KEY=your_openrouter_api_key
+   CORS_ALLOWED_ORIGINS=*
+   ```
+
+3. **Deploy**: Railway will automatically deploy from the main branch
+
+### Deployment Status
+- **Repository**: https://github.com/klogins-hash/max-mcp-railway
+- **Main File**: `index-enhanced.js` (v2.0.0)
+- **Health Check**: `/health`
+- **Metrics**: `/metrics`
 
 ## Quick Start
 
